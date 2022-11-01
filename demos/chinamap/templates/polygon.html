@@ -1,0 +1,270 @@
+<!--
+	此示例下载自 https://echarts.apache.org/examples/zh/editor.html?c=map-bar-morph&version=5.3.3&code=G4QwTgBA5gpg9gYTnMATAsiADhAvBAbwFgAoCciAeksBw5QfbdBBZUF-1UiiAckH89QPd12AuCAG0AjMIDMAOgCswgAwB2ADQQATJJXCAnADYAuotYV2gGyzApuaB_SMBZcvyFzhEzfKnzt25QBYJG2e4Ac7_UNydkAHZUAyvUAeHSsbEXEHDTEVJQgAWlkJeV9NJKlAsiNAB5smGLl0zWypd2FlYSkJX3lZWUS8tnZAJ-DAaP1APu0SjQz5d1lhZOEVevlHDVajQHDTQEbgkuFPeSTXTQ9pMSkk-RngwCjYwHVlEtlfL3l5LQ2IZYlZKV9EgIN84MBAAMBcY1Px901KnQ1TT1KTaJL7DiAUH9AByuMX-DlBKjUyn6mnEOlyrzagBvzQAr6oAL7VOnnKsh0Yhq41BoMmEPYgAbTQAFSoBDdVOkhkNQkIwh1EAAHKAMj0eYB72KCHB4SzZcmSai8Wj0WKMgFo5YoCWLaCRDZRiYGaWS0wCZIYAT5VZ9XcrlBHjVvjBfzlIvYgBH5QDq_oB601OdTEwga5og2nsOyGwlpNEAuHqANxs-nVVk4tcoUucGu4NHt5cFwjFMg4wb5fCj0lJNGJtP5aYAX3UAX-rOwBm6jFtMCxO4ZLVys3m5r0mJo9MUxxAPraDMAk0bKoQ6iTbbRiD0oyRFv6aF5252AGcTAA6KgENlGK-dKXEY6Fst5TyCZiB5avfN2mAfjTADPagHUbGuHxrlKTkiAThxa0S0iKAKZtACg6G88MYhgUM9yhRc4tT8ZxaWMX9AGO5QBqTXTNlNhUWlAFg5QBOOThdJ3AnbRhhRQ8ZCqMFaUATJtAE8nC9-0AenkYgbe5JmEMEp3qXx80TS9ABUAwBpRJiZ8TUyT02MTIYXEvQAfswEupskSKQpBRP0xkeMRaUAKHlAHRzATp2zHw3FfX4kh1XxaUAfHVAGYAwA3RRibYvDwxIVE1c4yUGTE7UAU7lACcgwB0JVszwOJYsZNXsfSHkDbt2EAYfVACnlWz0k3FQ_hzVRLRUB5n1pQBFz0AQC1KIYw8_BGVwUTrURXA0_tAGlFBjp0mFQ0U1dQ1C0CK7VXQAVDX_FUZE5J5s3cFF3UqXwVFtN4OEAMr9ADPTWy1TUfxljbaRAu0ecJvYQA5vJLQBLrVsuorSRDimpBdxVjajaS0AdPMBPbAyxs5NDIsAfTlAAvUhjzhkcdsxqOoFKScFIsATeVAEolawVTEFydF8WpNQC2R0sGUDNFLQAlpSrfyvBSj1R11SLACObZcSmBZYZELZRerROdIdpR1jAicGhCSzNtBcDxZLwoLaUAd2MqsAR0VABiVIcRDqM6GtYiA_nqEY_muM9aWdQBsW0ABHkapVLQJFrHUko8c51gR8a2kAXfkGTBmIVFFjing8cZ5AnbM1MiwAIZUATScQeJ6RmmPQbJcPFikrnWl-0ARkDABe_RnBGZgiPSyCnLUmcd3I2wBpr0ANzTAGztc3JGzMYnApuoWOp0zIqV2YGZKYl_lNF9TU5GQkoutpAEYncjy5VC37nEAjkkeaR_gB2kqsdQAGdQj2ovHZzlL1_Es26Z9IWKeSdJfsWoJxaSLAD0NX9w_N0KHg4m53E8YZtB2RujGMKzAH8MveMgbHIPHsAirW2Wl8cARbzaukJzbnOMbaQf0AI46HsOx4SPrbM4rNi52kABMqgAKEKqhjFUrh4iFn8LrTu_w7a0kADJygBPRUANRKSDqwoM8I8HYEsqijkuLLcygBkvUksgoQ-ZpCIkyM5TMjgtC0kAJAqv5eHOmYYIQYGRXCkhStQ9KeEYEbQ6rwkh6Z7BrFJC-SG9RfTNHWm0XBVUiYQ1XmfR4mCOzU0dnaQAvm5OldO3Q8_x7Y3EEo-TcyY7SAB4LQAgTm8IjnhUcoIsi_0TKOWo4lLyb0ADtGgAw1wKtIFw2RkhDE5JzB4tJLCADj_OeghGLNBhrHSW6RZC1lJCjSKgBLE1_IALE1ABnLubCCtZsyKV9uqcqHpuSUEAOTWaSmCADbtO0gAqYxyhudURY5z5mRsoAi6pVgI1PPLSKmFABleXCT2IxjoQFBF4cc2RaSAD0XQAHoolD1nhKQhEfQLxUDDTRTRrnDFpIAGqD9FM0jEVdkPp7DZCqMU0CtJACPQcLFIkhjmOBfApGhm4ZC0kAO7BjzBB1AamMM-yNHHjHEGNCctIm6_hhXGeykNHGArGGiWkgAV6xBoAN9MGLDPKOTdZeYckNFpIAI2VAB3FoAQg0ayPX-KNJFHhgQwx2DgyKgBVm2FuMBISMLReDWDTSK5hAC3zi7GIAL77ZECbhccrhGg3KaBfYIgBDEMACAhiqVQ4qRMfSomo6zlAaHLPctJADt-sLOQ6oZCUIpoY0ERLIqAFNNYe7t1bkJOQoQJxF_atMijswA1xpDKRE4UQPLJaWk9J6WRbQulKvhFcC5jVXyHlJAjbRRgGSAH-jQA5JpKrkOMNaa1SQU21HOC2Sc2iAGb7UtZt1ZvkuGTAyKQO5JHAamowdJzAwpluxfMVxYyJJ1BlPYpAAC-ABuUgpBqAQHoHIFgJBQCQAACLoF3SAAALiAPAQgRSCGIBNNgAA7EAABbGAAh2BKnYCKedygr1sFvQ-p9EAABEZgrD_u7GwUAAAbAArn-4876ISXpFD-x9z7X3vs_Yhigd7kMAfCFESwIGMPkAg9BgQsGJrzvg1-795AsN_pfcUNDhBCMQFowIf9RQCPXooMRmDsg4PdgQ1xmjv6UMMfI-hoTLGRMAa6N0Tj1GiMgCg7x_jF6qPUdYxwVD4mmOSc0_-hY8mFM8dI3x8jlHmOafo2-nT6nv36eOEZ6jJnXxmbYBRgTdmkN0e0-5iTCmpPYf_V8Jz36XNkfcxZvT0nrOMa85h6T_6YShbA0pkjrnVMTUEwFqzvmKAft0zlxLeJ8Qpe42llT5nPOWZi3l8gBX4vCaC4yJkZXFPKdM3B0guhl0kF5AKYU27wAQF3cIAAMoek9Z7BBqZq9h2Ltm5t_v_YaNrEBwtufy1For826sQAa0ttj1i1sbcy2wbLCnctib84Vy7iWQyhhOxVzrVXZvRd29d_L_m7tBfCE9jrGXXtZca4Fnzn36vfY04l8sVZ_vpYi1t6r72wc2ZuyD_TfZBxw8q5FpHO2UdxcOwBpca5scvdx29_HonUdfdu1DoL14bxk8BxT4HROuC8EJ8jtjP5fzM4R_V7bP2CeLe5wB2CiF-ebcF3j4X1OudU4A1hKXZ2KAXfpyLtHRP_1URorRFXQPzvo9q-D_bkP7OJYvHxA3rOjfs72wdsX_6LySRt4jyncutOm8d4r_9Wk3cy49xr-XovfeWSsgH_bQvg9e5pxDunFugveR8pHjzQfE-a9p8boLsVU_R4zyHrXTvcqUTz7LmPC2i--_UtVMv6fvOF6z9rzqfPQPlYBwLqP5eC-x4V57_9M069s7F5XpvTvto7SH3bkfDvzcN4A9dKfavs90bFH3mP_63pL_IOrnvo_48r7Y6DfDbf2vw-l13-vCWPtx7Nwn-f_6Szo0rNvoQh_e-h_74TV_u_5_77v-_v-nTAzD_u_v_j7v3rzILEwKAfbt7nPtfstkrKrLATPvAffogWxibGDKgYruAQgU1stq7CDLgZ7vgRgYQWxiHOHKQRXrPhQaDmxmnOnLQXvvQYAaXCAafuts9izu7sPngewdri3FwcxqdobsvnAbfhARvkPKPKwX_kIU7heDPKIZJuIbbpIWgdIQQYwQBtvDQdwRofwdPoIegYAVfNfAoZgR_lXl_h_NYZQbYWPr7sAo4XoeQYAQgiQu4VdjoQwfpgQsQrDkYbwZ3mngIWQUoWHowiEWIWERfhEaYVEeYdrvwoInEeoQkarjvmAdEf3vIj4aER3okfnooakU7rosuL4Sbv4YAVYi6DUTfuvj3v-p4t4k0ZngftrheBEpEp0Y3t0U7ukmoQFsYYHpEXQRUb7uUtUnnt1r1juhAAAPIHrHqnr4CCBUAdJdK9KTFsHTH94DIDHOFDG-6LInGeHa77KXH5Eb4PK3GHEb5_KPF1Ha7QqvEtEP6YrVHFHn45Fv5SFfE2H_qkpkqfGf4b4sqsoQl2Eb4iqwkuH97youyIlnH96Gqol_E44mFaFmFvFO6OpokAHa6-okHYnk64m5FAmQmtFRrEkyGtFdIMm6H6YlqloskBGJato4EUl8ETHJFTEEm-7Dq_HxElFdYkA9Yrp9aUAQCADwOoAHsZgAXOaAAhboAH9qgA4BaAAw_4APfKHkgAFK5WSABrcuqYAEb6gA_2aABGxqQEsVgOBiADejAAAArHoAAWeAdoWA7pfA1A6AIwDw9wbg4gnowSYgwAcYwIFs7g4GAKGsmgva_Qkwmg4GBSdsvaZwQZYgAAxnmBoHGJ4K4CoL2mqGCAmWMPYAnCkOOJmMICkBWeqGiNmQCoeBOMWe2A8NWZ4H4E5IWPUA1NWZIDoNUA2bLKmUxOSOlOcIUmILGR6NqIoEiJWeUMAFkF4JUOBhOO2HhPWc4FjL4OBmMF4JDIudQseAefWfWOqH8IoNkO-MIOOc-NUEElooeU4I9FICkEEmiPIG-QXBbIoN-SMI-R6F-eMK-Zed2X8CkHeQWA-UeQtL2meWcGNgGXUIUooCGRBOIAAF7sC9arpymADtwYAGvKw86pCogA7rGACdDgLIABN-1FqpgACuo6keSAAOpoACN-ZpgA8PpGyAAa2oANBypgtpw22ZcAN6wAMAYAR6k2GxEAAAZpBjetmUegAJbiUAAUqA6xAAlAnksWADAAAM7TbSkTTyUoAQAaVLGqVnqyCLoQC2UAA8EA2lJ6Eg4GMAN6UAR6bpDlqlAA1AFXpSDksW5SAAAJJHowD3pnrhWCCqVmVjHDbyVgBwD3pIAoCoBnqwCIDIBoCYBYCCDhVRUxWCC6gSC0ZJXGbDZHp5VZU5XwCZUFXYDFXrGlX3oiC6CVW_rVXUaqXyVWWpXpXNXZUABkY1EAdVo1IVzGbAhlRlEgWAkGRlbpGlv-AWFAYlWVAgw1GV-V2Va6NFLFc1SJm13621aAAg01B12xEADFJ1kmkWOlzG8676IohlR6kGYAN6EAC1vWb1JAIlkAYl4Gllmx7AAAxJoCADAFIPJdmewMoFDagNmQAEbyVXDsA9Z3WABXgYAFnagAknIUWACBkQaYAAxKqpgAORleTA0QBGVSWqXGWmUOVroGmmB8WAAVCuRWxYAHbGMpM2E01Agg1myg-6slbSItr6Yt42EtF6otKxaxJ6ug3WEgFlYAAAoiANmWtYpcpWpZpapdFfesoKpbNRNAzWAEzYtctatRpSDmuhYl5IAFRBgA_X6USAASpuqcxkegAJ5YB0bgaqVOlGVI3MY4WeWSXgYCDVB3UGmABxcoAGBKgAQjrak4UpDB2oAwAAAeqpHtgAOebMYwDyXyUwAqUCAg5sCrVwAADu11YA0Gyga6gAFUoe2AD0ZoAGQqgAfGaABcnqdeQAHVbXAKgAIAZGup7c3YANyuZKgAL6n91TVgAgCqXgZjZeU-VukCBbhN1yme2AB8OoAJ_xqpgA_qlhDz2g0oDPqQ0l3yVI13We003z1GW-33po1wDgYADKqlOFMGd9Htpa8pr13BQdTp79ftnlFd89N6KA96SmFdd1gAxtaAAceoAKMGgArYoCWqmu2ACG5oAOwW3F89bA59YAAgRD5VEI515ANdqlqAvlm929EAgAB2qABccm3YAAfKDIBd2pJNbdgAkOaAC92mENqdg4AFjygAG8qADpPtqU7W7Z7ehIAHBmXdBDW131klIdRlAgaQXgd12DgAT2an1PX5aAPMbhUkPiWSXSWyUaVG1lWBh6Xj0e2qmUWADTmoAIAMDFgAsvKAB2_nFndUqcqW7QXT7f7YHcHcZWHZJhHTAFHQIE5MxtQE_S_W_SqOwFA06bfewOAGlTXdjcoOQGzfHYAH3RnjgAtd6AAsmsxgk6_R_V_X-nINwcXaXeXQwVXW6bXfXY3fPYPepSPT6NwWwEeovcvavd5bQxALIH0xQGupU0kxAPaY6S6e6fQ57WaYAG1OephpJpRlwAUAsz7p4VgogAIfpwQWmP3P1VOf3f0CBSBGOSbAMwCgO-3gPNOYbQOwPPPUZEOmNg1gBkMTPUZUM0Mb23B_PfpwDenZlG2-2b2awguEMqNeXGXqOpDpAqDz2A0BYfrGPrGmMSVSUyXrFWPG1dV2M70OPONuPUVePak8iABUcoADFyocnF2pgAH26ADK-vHZdagEi2JbixYwS9Y51bYz42uoAMam1FgTkmftAdz6DTZdR6792Zx60VYA4TAWnLwdx69zvtRlxtz6uVt9a6gAFhE92AD-8gacxZqYAN8-TDw8gAYC4sWWvh2R0wDR2vjcFW1YD2kwAa0l1ysQMGPkBo0N2rUAAqwTz6OraVAA1jAOwHdfjIAJ1-gAG36ABsShKxi0AyAGjS6_6xQyxq866wQHdYABt5gAJdGqmzCAA05pqYAH7evdeDSj5A1dddC9HTAb36WAcARlRt6lN6z6nl8lR6BrcptbvdqpXjjbClrzR6yrz6BAaN86cba6tbgAoYqACd2m4txYABZqaLNzAWArDzTzldLzYAMDhbk7nzEApDuou7kmmLkmJjjlRLgYEgMDWAGletKlvbWl7Vxt5tebn131v1x7MeJVz73VtGsL7e6WuVo1hVbVJ6HVXVPVj6-gd1NF473j7bVdZzb9Fzf6YHNj3VPGVAks9DYrqp_92pgAWAmADj8YANJygAskpFOqmADC5oALOJpggAhdGADp3tqRBqqYADwKpguN4VgAK_GAB7aqqTxmi71hiy9eRjpQDUpzKWur3R4544oIAN4-gAPPLx2ABQcoAEbpgAAOaABwKrS5w4AHymgAFOqABomoZ4AJmK2pbdTDgAYXKABMaYAEbWgA1RGABV-oAPXOgA5kaAAyERUoAITWpAlt1tS1K1a1dmUrdGsrKlCrSrUlqrW1B1Gr0V792rurHA-r3YkT0TbrH1qlnrnlPrjTR6ubCmQbsXYb0rHAkbcAMbOhIoDp2b57emBbNX51zb7TMAILnb3bBtfbHAA7Q7IL6tMDM7Ulc7C7t-7maGIo0z1TlzClSlX7mlEG_7CmgHP1PB4GkcugpHvgcnX2IoB7YDf66OPX7zV7b9F9D33zXVr1y3E0j7G1Thot4p6Wqowylq8QbY5DFAHXOb93UDp7bzIHHbXbPb4lz6VtUAbpQ7t7GLkp86KnQNspEAZngAuEpOOABoyoAGhygAMq7kUKiqnMuADOinzaQPer7QgG6eAEehIAzUessVgKN_bSKGjdrVG1AGlUpagEgN85fXYKsO4Ol-QGpUeke3E5QNFdndV17kwIAKJpgAHLGADIZoAMPygA2_GAArmoABoqwj0v368TkGaNSvKv7ATAhCgAIrGAD10Wb_0znfK9d715tZe1DdfS7wphZTevKzUzExfn5j7WC8-nIFgNnX7-QBN5H7INH21xNLlZ72wG-8-jXSgOBqgMOxAIAHBygAqPoGl6-mCqnkUABWRlgAsCqADq2jyIAC-BzGaVD6u1SmDN9DgAgZ6eeACU_pZ4AM56gA357MZXePM3d3WADz1jS4AFzKgA--qqkNvtuQ9ntp8UPgAwAgCi9PdQ3yCoC7-7-LcKb3t5sxVYDM_dtIsw9sDr-b-PfEMcCQ0qAgDry59o9H_uswBQC9tIuXp3WACQCZTzn6QMYsTPDVrH2_QM1PKKlGAD03krt9Bu89UfkezuqAANrMAB1cmSkACYCgv3wbYcKAp_c_qpUv6Ttr-hlW_mLwf7789-r_PAfVjRYgswehbVAWgNVJYD0IvdWtpOwIEgAL-q_PNk21aYts4B4GBmpO3RYUNxB1GCjO9yrqM1jKAgKLsZXoaAAwHSY6AAQTVtaqk-alncmoAE34xcCKGt6HsbuzGAPkH3W5jB3qJATHouiAA
+	⚠ 请注意，该图表不是 Apache ECharts 官方示例，而是由用户代码生成的。请注意鉴别其内容。
+-->
+<!DOCTYPE html>
+<html lang="zh-CN" style="height: 100%">
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body style="height: 100%; margin: 0">
+    <div id="container" style="height: 100%"></div>
+
+
+    <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.3.3/dist/echarts.min.js"></script>
+    <!-- <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/world.js"></script> -->
+    <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/china.js"></script>
+
+
+
+
+    <!-- Uncomment this line if you want to dataTool extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.3.3/dist/extension/dataTool.min.js"></script>
+  -->
+    <!-- Uncomment this line if you want to use gl extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-gl@2/dist/echarts-gl.min.js"></script>
+  -->
+    <!-- Uncomment this line if you want to echarts-stat extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-stat@latest/dist/ecStat.min.js"></script>
+  -->
+    <!-- Uncomment this line if you want to use map
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/china.js"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/world.js"></script>
+  -->
+    <!-- Uncomment these two lines if you want to use bmap extension
+  <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=YOUR_API_KEY"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.3.3/dist/extension/bmap.min.js"></script>
+  -->
+
+<!--
+参考：
+https://echarts.apache.org/examples/zh/editor.html?c=dynamic-data2
+https://echarts.apache.org/examples/zh/editor.html?c=custom-cartesian-polygon
+-->
+    <script type="text/javascript">
+        var dom = document.getElementById('container');
+        var myChart = echarts.init(dom, null, {
+            renderer: 'canvas',
+            useDirtyRect: false
+        });
+        var app = {};
+        var echartOption;       // echarts配置项
+
+        var oneDay = 24 * 3600 * 1000;
+        var now = new Date(2022, 1, 1);
+        var dataSeed = Math.random() * 300
+
+        function randomData() {
+            now = new Date(+now + oneDay);
+            dataSeed = dataSeed + Math.random() * 21 - 10;
+            return {
+                name: now.toString(),
+                value: [
+                    [now.getFullYear(), now.getMonth() + 1, now.getDate()].join('/'),
+                    Math.round(dataSeed)
+                ]
+            };
+        }
+        
+        var dataHistorical = [];
+        for (var i = 0; i < 100; i++) {
+            dataHistorical.push(randomData());
+        }
+        var prejectionDataWarningTop = [];
+        var prejectionDataWarningBottom = [];
+        var prejectionDataWellTop = [];
+        var prejectionDataWellBottom = [];
+        var prejectionDataGoodTop = [];
+        var prejectionDataGoodBottom = [];
+        // const dataCount = 3;
+        // for (let i = 0; i < dataCount; i++) {
+        //     data.push([
+        //         echarts.number.round(Math.random() * 50),
+        //         echarts.number.round(Math.random() * 400)
+        //     ]);
+        // }
+        console.log(dataHistorical[dataHistorical.length-1].value[0])
+        var hisLastDate = new Date(dataHistorical[dataHistorical.length-1].value[0]);
+        var hisLastValu = dataHistorical[dataHistorical.length-1].value[1];
+        var projectionDateS = new Date(+hisLastDate + oneDay);
+        var projectionDateE = new Date(+projectionDateS + 200*oneDay);
+
+        var projectionCM = new Map()
+        projectionCM.set('proj-warning-top', '#B52006');
+        projectionCM.set('proj-warning-bottom', '#B52006');
+        projectionCM.set('proj-well-top', '#8A9441');
+        projectionCM.set('proj-well-bottom', '#8A9441');
+        projectionCM.set('proj-good-top', '#299C03');
+        projectionCM.set('proj-good-bottom', '#299C03');
+        // projection - warning top
+        prejectionDataWarningTop.push({name: projectionDateS.toString(), value: [ [projectionDateS.getFullYear(), projectionDateS.getMonth() + 1, projectionDateS.getDate()].join('/'), hisLastValu ]})
+        prejectionDataWarningTop.push({name: projectionDateE.toString(), value: [ [projectionDateE.getFullYear(), projectionDateE.getMonth() + 1, projectionDateE.getDate()].join('/'), hisLastValu + 50 ]})
+        prejectionDataWarningTop.push({name: projectionDateE.toString(), value: [ [projectionDateE.getFullYear(), projectionDateE.getMonth() + 1, projectionDateE.getDate()].join('/'), hisLastValu + 30 ]})
+        // projection - well top 
+        prejectionDataWellTop.push({name: projectionDateS.toString(), value: [ [projectionDateS.getFullYear(), projectionDateS.getMonth() + 1, projectionDateS.getDate()].join('/'), hisLastValu ]})
+        prejectionDataWellTop.push({name: projectionDateE.toString(), value: [ [projectionDateE.getFullYear(), projectionDateE.getMonth() + 1, projectionDateE.getDate()].join('/'), hisLastValu + 29 ]})
+        prejectionDataWellTop.push({name: projectionDateE.toString(), value: [ [projectionDateE.getFullYear(), projectionDateE.getMonth() + 1, projectionDateE.getDate()].join('/'), hisLastValu + 15 ]})
+        // projection - good top
+        prejectionDataGoodTop.push({name: projectionDateS.toString(), value: [ [projectionDateS.getFullYear(), projectionDateS.getMonth() + 1, projectionDateS.getDate()].join('/'), hisLastValu ]})
+        prejectionDataGoodTop.push({name: projectionDateE.toString(), value: [ [projectionDateE.getFullYear(), projectionDateE.getMonth() + 1, projectionDateE.getDate()].join('/'), hisLastValu + 14 ]})
+        prejectionDataGoodTop.push({name: projectionDateE.toString(), value: [ [projectionDateE.getFullYear(), projectionDateE.getMonth() + 1, projectionDateE.getDate()].join('/'), hisLastValu + 0 ]})
+        // projection - good bottom
+        prejectionDataGoodBottom.push({name: projectionDateS.toString(), value: [ [projectionDateS.getFullYear(), projectionDateS.getMonth() + 1, projectionDateS.getDate()].join('/'), hisLastValu ]})
+        prejectionDataGoodBottom.push({name: projectionDateE.toString(), value: [ [projectionDateE.getFullYear(), projectionDateE.getMonth() + 1, projectionDateE.getDate()].join('/'), hisLastValu - 1 ]})
+        prejectionDataGoodBottom.push({name: projectionDateE.toString(), value: [ [projectionDateE.getFullYear(), projectionDateE.getMonth() + 1, projectionDateE.getDate()].join('/'), hisLastValu - 20 ]})
+        // projection - well bottom 
+        prejectionDataWellBottom.push({name: projectionDateS.toString(), value: [ [projectionDateS.getFullYear(), projectionDateS.getMonth() + 1, projectionDateS.getDate()].join('/'), hisLastValu ]})
+        prejectionDataWellBottom.push({name: projectionDateE.toString(), value: [ [projectionDateE.getFullYear(), projectionDateE.getMonth() + 1, projectionDateE.getDate()].join('/'), hisLastValu - 20 ]})
+        prejectionDataWellBottom.push({name: projectionDateE.toString(), value: [ [projectionDateE.getFullYear(), projectionDateE.getMonth() + 1, projectionDateE.getDate()].join('/'), hisLastValu - 35 ]})
+        // projection - warning bottom 
+        prejectionDataWarningBottom.push({name: projectionDateS.toString(), value: [ [projectionDateS.getFullYear(), projectionDateS.getMonth() + 1, projectionDateS.getDate()].join('/'), hisLastValu ]})
+        prejectionDataWarningBottom.push({name: projectionDateE.toString(), value: [ [projectionDateE.getFullYear(), projectionDateE.getMonth() + 1, projectionDateE.getDate()].join('/'), hisLastValu - 36 ]})
+        prejectionDataWarningBottom.push({name: projectionDateE.toString(), value: [ [projectionDateE.getFullYear(), projectionDateE.getMonth() + 1, projectionDateE.getDate()].join('/'), hisLastValu - 60 ]})
+
+        var alldata = dataHistorical.concat(prejectionDataWarningTop)
+                                    .concat(prejectionDataWellTop)
+                                    .concat(prejectionDataGoodTop)
+                                    .concat(prejectionDataGoodBottom)
+                                    .concat(prejectionDataWellBottom)
+                                    .concat(prejectionDataWarningBottom).sort(function (a, b) { return a.name>b.name });
+        var projDataMap = new Map();
+        projDataMap.set('proj-warning-top', prejectionDataWarningTop);
+        projDataMap.set('proj-well-top', prejectionDataWellTop);
+        projDataMap.set('proj-good-top', prejectionDataGoodTop);
+        projDataMap.set('proj-good-bottom', prejectionDataGoodBottom);
+        projDataMap.set('proj-well-bottom', prejectionDataWellBottom);
+        projDataMap.set('proj-warning-bottom', prejectionDataWarningBottom);
+
+        var series = [];
+
+        // 历史线条
+        series.push({
+            name: 'historical',
+            type: 'line',
+            showSymbol: false,
+            data: dataHistorical
+        })
+
+        var renderPolygon = function(params, api) {
+            console.log(params.seriesName, api.value(1))
+            // 每个data item都会调用此方法，这里一次性绘制完毕，避免多次调用重绘，
+            // 没有使用dataItem数据
+            if (params.context.rendered) {
+                return;
+            }
+            params.context.rendered = true;
+
+            var serName = params.seriesName;
+            
+            let points = [];
+            for (let i = 0; i < projDataMap.get(serName).length; i++) {
+                points.push(api.coord(projDataMap.get(serName)[i].value));
+            }
+            let color = projectionCM.get(serName); // api.visual('color');
+            return {
+                type: 'polygon',
+                transition: ['shape'],
+                shape: {
+                    points: points
+                },
+                style: api.style({
+                    fill: color,
+                    stroke: echarts.color.lift(color, 0.1)
+                })
+            };
+        };
+
+        // 多边形区域
+        series.push({
+            name: 'proj-warning-top',
+            type: 'custom',
+            renderItem: renderPolygon,
+            clip: true,
+            data: prejectionDataWarningTop
+        });
+        series.push({
+            name: 'proj-well-top',
+            type: 'custom',
+            renderItem: renderPolygon,
+            clip: true,
+            data: [[]]
+        });
+        series.push({
+            name: 'proj-good-top',
+            type: 'custom',
+            renderItem: renderPolygon,
+            clip: true,
+            data: [[]]
+        });
+        series.push({
+            name: 'proj-good-bottom',
+            type: 'custom',
+            renderItem: renderPolygon,
+            clip: true,
+            data: [[]]
+        });
+        series.push({
+            name: 'proj-well-bottom',
+            type: 'custom',
+            renderItem: renderPolygon,
+            clip: true,
+            data: [[]]
+        });
+        series.push({
+            name: 'proj-warning-bottom',
+            type: 'custom',
+            renderItem: renderPolygon,
+            clip: true,
+            data: [[]]
+        });
+
+        echartOption = {
+            tooltip: {
+                trigger: 'axis',
+                formatter: function (params) {
+                    params = params[0];
+                    var date = new Date(params.name);
+                    return (
+                      date.getDate() +
+                      '/' +
+                      (date.getMonth() + 1) +
+                      '/' +
+                      date.getFullYear() +
+                      ' : ' +
+                      params.value[1]
+                    );
+                  },
+                  axisPointer: {
+                    animation: false
+                  }
+            },
+            legend: {
+                data: ['bar', 'error']
+            },
+            // xAxis: {},
+            xAxis: {
+                type: 'time',
+                splitLine: {
+                    show: false
+                },
+                max: 'dataMax',
+                data: alldata.map(function (item) {
+                    return item[0];
+                })
+            },
+            yAxis: {
+                splitLine: {
+                    show: false
+                }
+            },
+            series: series
+        };
+        myChart.setOption(echartOption);
+
+        window.addEventListener('resize', myChart.resize);
+    </script>
+</body>
+
+</html>
