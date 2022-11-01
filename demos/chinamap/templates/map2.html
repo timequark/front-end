@@ -1,0 +1,551 @@
+<!--
+	此示例下载自 https://echarts.apache.org/examples/zh/editor.html?c=map-bar-morph&version=5.3.3&code=G4QwTgBA5gpg9gYTnMATAsiADhAvBAbwFgAoCciAeksBw5QfbdBBZUF-1UiiAckH89QPd12AuCAG0AjMIDMAOgCswgAwB2ADQQATJJXCAnADYAuotYV2gGyzApuaB_SMBZcvyFzhEzfKnzt25QBYJG2e4Ac7_UNydkAHZUAyvUAeHSsbEXEHDTEVJQgAWlkJeV9NJKlAsiNAB5smGLl0zWypd2FlYSkJX3lZWUS8tnZAJ-DAaP1APu0SjQz5d1lhZOEVevlHDVajQHDTQEbgkuFPeSTXTQ9pMSkk-RngwCjYwHVlEtlfL3l5LQ2IZYlZKV9EgIN84MBAAMBcY1Px901KnQ1TT1KTaJL7DiAUH9AByuMX-DlBKjUyn6mnEOlyrzagBvzQAr6oAL7VOnnKsh0Yhq41BoMmEPYgAbTQAFSoBDdVOkhkNQkIwh1EAAHKAMj0eYB72KCHB4SzZcmSai8Wj0WKMgFo5YoCWLaCRDZRiYGaWS0wCZIYAT5VZ9XcrlBHjVvjBfzlIvYgBH5QDq_oB601OdTEwga5og2nsOyGwlpNEAuHqANxs-nVVk4tcoUucGu4NHt5cFwjFMg4wb5fCj0lJNGJtP5aYAX3UAX-rOwBm6jFtMCxO4ZLVys3m5r0mJo9MUxxAPraDMAk0bKoQ6iTbbRiD0oyRFv6aF5252AGcTAA6KgENlGK-dKXEY6Fst5TyCZiB5avfN2mAfjTADPagHUbGuHxrlKTkiAThxa0S0iKAKZtACg6G88MYhgUM9yhRc4tT8ZxaWMX9AGO5QBqTXTNlNhUWlAFg5QBOOThdJ3AnbRhhRQ8ZCqMFaUATJtAE8nC9-0AenkYgbe5JmEMEp3qXx80TS9ABUAwBpRJiZ8TUyT02MTIYXEvQAfswEupskSKQpBRP0xkeMRaUAKHlAHRzATp2zHw3FfX4kh1XxaUAfHVAGYAwA3RRibYvDwxIVE1c4yUGTE7UAU7lACcgwB0JVszwOJYsZNXsfSHkDbt2EAYfVACnlWz0k3FQ_hzVRLRUB5n1pQBFz0AQC1KIYw8_BGVwUTrURXA0_tAGlFBjp0mFQ0U1dQ1C0CK7VXQAVDX_FUZE5J5s3cFF3UqXwVFtN4OEAMr9ADPTWy1TUfxljbaRAu0ecJvYQA5vJLQBLrVsuorSRDimpBdxVjajaS0AdPMBPbAyxs5NDIsAfTlAAvUhjzhkcdsxqOoFKScFIsATeVAEolawVTEFydF8WpNQC2R0sGUDNFLQAlpSrfyvBSj1R11SLACObZcSmBZYZELZRerROdIdpR1jAicGhCSzNtBcDxZLwoLaUAd2MqsAR0VABiVIcRDqM6GtYiA_nqEY_muM9aWdQBsW0ABHkapVLQJFrHUko8c51gR8a2kAXfkGTBmIVFFjing8cZ5AnbM1MiwAIZUATScQeJ6RmmPQbJcPFikrnWl-0ARkDABe_RnBGZgiPSyCnLUmcd3I2wBpr0ANzTAGztc3JGzMYnApuoWOp0zIqV2YGZKYl_lNF9TU5GQkoutpAEYncjy5VC37nEAjkkeaR_gB2kqsdQAGdQj2ovHZzlL1_Es26Z9IWKeSdJfsWoJxaSLAD0NX9w_N0KHg4m53E8YZtB2RujGMKzAH8MveMgbHIPHsAirW2Wl8cARbzaukJzbnOMbaQf0AI46HsOx4SPrbM4rNi52kABMqgAKEKqhjFUrh4iFn8LrTu_w7a0kADJygBPRUANRKSDqwoM8I8HYEsqijkuLLcygBkvUksgoQ-ZpCIkyM5TMjgtC0kAJAqv5eHOmYYIQYGRXCkhStQ9KeEYEbQ6rwkh6Z7BrFJC-SG9RfTNHWm0XBVUiYQ1XmfR4mCOzU0dnaQAvm5OldO3Q8_x7Y3EEo-TcyY7SAB4LQAgTm8IjnhUcoIsi_0TKOWo4lLyb0ADtGgAw1wKtIFw2RkhDE5JzB4tJLCADj_OeghGLNBhrHSW6RZC1lJCjSKgBLE1_IALE1ABnLubCCtZsyKV9uqcqHpuSUEAOTWaSmCADbtO0gAqYxyhudURY5z5mRsoAi6pVgI1PPLSKmFABleXCT2IxjoQFBF4cc2RaSAD0XQAHoolD1nhKQhEfQLxUDDTRTRrnDFpIAGqD9FM0jEVdkPp7DZCqMU0CtJACPQcLFIkhjmOBfApGhm4ZC0kAO7BjzBB1AamMM-yNHHjHEGNCctIm6_hhXGeykNHGArGGiWkgAV6xBoAN9MGLDPKOTdZeYckNFpIAI2VAB3FoAQg0ayPX-KNJFHhgQwx2DgyKgBVm2FuMBISMLReDWDTSK5hAC3zi7GIAL77ZECbhccrhGg3KaBfYIgBDEMACAhiqVQ4qRMfSomo6zlAaHLPctJADt-sLOQ6oZCUIpoY0ERLIqAFNNYe7t1bkJOQoQJxF_atMijswA1xpDKRE4UQPLJaWk9J6WRbQulKvhFcC5jVXyHlJAjbRRgGSAH-jQA5JpKrkOMNaa1SQU21HOC2Sc2iAGb7UtZt1ZvkuGTAyKQO5JHAamowdJzAwpluxfMVxYyJJ1BlPYpAAC-ABuUgpBqAQHoHIFgJBQCQAACLoF3SAAALiAPAQgRSCGIBNNgAA7EAABbGAAh2BKnYCKedygr1sFvQ-p9EAABEZgrD_u7GwUAAAbAArn-4876ISXpFD-x9z7X3vs_Yhigd7kMAfCFESwIGMPkAg9BgQsGJrzvg1-795AsN_pfcUNDhBCMQFowIf9RQCPXooMRmDsg4PdgQ1xmjv6UMMfI-hoTLGRMAa6N0Tj1GiMgCg7x_jF6qPUdYxwVD4mmOSc0_-hY8mFM8dI3x8jlHmOafo2-nT6nv36eOEZ6jJnXxmbYBRgTdmkN0e0-5iTCmpPYf_V8Jz36XNkfcxZvT0nrOMa85h6T_6YShbA0pkjrnVMTUEwFqzvmKAft0zlxLeJ8Qpe42llT5nPOWZi3l8gBX4vCaC4yJkZXFPKdM3B0guhl0kF5AKYU27wAQF3cIAAMoek9Z7BBqZq9h2Ltm5t_v_YaNrEBwtufy1For826sQAa0ttj1i1sbcy2wbLCnctib84Vy7iWQyhhOxVzrVXZvRd29d_L_m7tBfCE9jrGXXtZca4Fnzn36vfY04l8sVZ_vpYi1t6r72wc2ZuyD_TfZBxw8q5FpHO2UdxcOwBpca5scvdx29_HonUdfdu1DoL14bxk8BxT4HROuC8EJ8jtjP5fzM4R_V7bP2CeLe5wB2CiF-ebcF3j4X1OudU4A1hKXZ2KAXfpyLtHRP_1URorRFXQPzvo9q-D_bkP7OJYvHxA3rOjfs72wdsX_6LySRt4jyncutOm8d4r_9Wk3cy49xr-XovfeWSsgH_bQvg9e5pxDunFugveR8pHjzQfE-a9p8boLsVU_R4zyHrXTvcqUTz7LmPC2i--_UtVMv6fvOF6z9rzqfPQPlYBwLqP5eC-x4V57_9M069s7F5XpvTvto7SH3bkfDvzcN4A9dKfavs90bFH3mP_63pL_IOrnvo_48r7Y6DfDbf2vw-l13-vCWPtx7Nwn-f_6Szo0rNvoQh_e-h_74TV_u_5_77v-_v-nTAzD_u_v_j7v3rzILEwKAfbt7nPtfstkrKrLATPvAffogWxibGDKgYruAQgU1stq7CDLgZ7vgRgYQWxiHOHKQRXrPhQaDmxmnOnLQXvvQYAaXCAafuts9izu7sPngewdri3FwcxqdobsvnAbfhARvkPKPKwX_kIU7heDPKIZJuIbbpIWgdIQQYwQBtvDQdwRofwdPoIegYAVfNfAoZgR_lXl_h_NYZQbYWPr7sAo4XoeQYAQgiQu4VdjoQwfpgQsQrDkYbwZ3mngIWQUoWHowiEWIWERfhEaYVEeYdrvwoInEeoQkarjvmAdEf3vIj4aER3okfnooakU7rosuL4Sbv4YAVYi6DUTfuvj3v-p4t4k0ZngftrheBEpEp0Y3t0U7ukmoQFsYYHpEXQRUb7uUtUnnt1r1juhAAAPIHrHqnr4CCBUAdJdK9KTFsHTH94DIDHOFDG-6LInGeHa77KXH5Eb4PK3GHEb5_KPF1Ha7QqvEtEP6YrVHFHn45Fv5SFfE2H_qkpkqfGf4b4sqsoQl2Eb4iqwkuH97youyIlnH96Gqol_E44mFaFmFvFO6OpokAHa6-okHYnk64m5FAmQmtFRrEkyGtFdIMm6H6YlqloskBGJato4EUl8ETHJFTEEm-7Dq_HxElFdYkA9Yrp9aUAQCADwOoAHsZgAXOaAAhboAH9qgA4BaAAw_4APfKHkgAFK5WSABrcuqYAEb6gA_2aABGxqQEsVgOBiADejAAAArHoAAWeAdoWA7pfA1A6AIwDw9wbg4gnowSYgwAcYwIFs7g4GAKGsmgva_Qkwmg4GBSdsvaZwQZYgAAxnmBoHGJ4K4CoL2mqGCAmWMPYAnCkOOJmMICkBWeqGiNmQCoeBOMWe2A8NWZ4H4E5IWPUA1NWZIDoNUA2bLKmUxOSOlOcIUmILGR6NqIoEiJWeUMAFkF4JUOBhOO2HhPWc4FjL4OBmMF4JDIudQseAefWfWOqH8IoNkO-MIOOc-NUEElooeU4I9FICkEEmiPIG-QXBbIoN-SMI-R6F-eMK-Zed2X8CkHeQWA-UeQtL2meWcGNgGXUIUooCGRBOIAAF7sC9arpymADtwYAGvKw86pCogA7rGACdDgLIABN-1FqpgACuo6keSAAOpoACN-ZpgA8PpGyAAa2oANBypgtpw22ZcAN6wAMAYAR6k2GxEAAAZpBjetmUegAJbiUAAUqA6xAAlAnksWADAAAM7TbSkTTyUoAQAaVLGqVnqyCLoQC2UAA8EA2lJ6Eg4GMAN6UAR6bpDlqlAA1AFXpSDksW5SAAAJJHowD3pnrhWCCqVmVjHDbyVgBwD3pIAoCoBnqwCIDIBoCYBYCCDhVRUxWCC6gSC0ZJXGbDZHp5VZU5XwCZUFXYDFXrGlX3oiC6CVW_rVXUaqXyVWWpXpXNXZUABkY1EAdVo1IVzGbAhlRlEgWAkGRlbpGlv-AWFAYlWVAgw1GV-V2Va6NFLFc1SJm13621aAAg01B12xEADFJ1kmkWOlzG8676IohlR6kGYAN6EAC1vWb1JAIlkAYl4Gllmx7AAAxJoCADAFIPJdmewMoFDagNmQAEbyVXDsA9Z3WABXgYAFnagAknIUWACBkQaYAAxKqpgAORleTA0QBGVSWqXGWmUOVroGmmB8WAAVCuRWxYAHbGMpM2E01Agg1myg-6slbSItr6Yt42EtF6otKxaxJ6ug3WEgFlYAAAoiANmWtYpcpWpZpapdFfesoKpbNRNAzWAEzYtctatRpSDmuhYl5IAFRBgA_X6USAASpuqcxkegAJ5YB0bgaqVOlGVI3MY4WeWSXgYCDVB3UGmABxcoAGBKgAQjrak4UpDB2oAwAAAeqpHtgAOebMYwDyXyUwAqUCAg5sCrVwAADu11YA0Gyga6gAFUoe2AD0ZoAGQqgAfGaABcnqdeQAHVbXAKgAIAZGup7c3YANyuZKgAL6n91TVgAgCqXgZjZeU-VukCBbhN1yme2AB8OoAJ_xqpgA_qlhDz2g0oDPqQ0l3yVI13We003z1GW-33po1wDgYADKqlOFMGd9Htpa8pr13BQdTp79ftnlFd89N6KA96SmFdd1gAxtaAAceoAKMGgArYoCWqmu2ACG5oAOwW3F89bA59YAAgRD5VEI515ANdqlqAvlm929EAgAB2qABccm3YAAfKDIBd2pJNbdgAkOaAC92mENqdg4AFjygAG8qADpPtqU7W7Z7ehIAHBmXdBDW131klIdRlAgaQXgd12DgAT2an1PX5aAPMbhUkPiWSXSWyUaVG1lWBh6Xj0e2qmUWADTmoAIAMDFgAsvKAB2_nFndUqcqW7QXT7f7YHcHcZWHZJhHTAFHQIE5MxtQE_S_W_SqOwFA06bfewOAGlTXdjcoOQGzfHYAH3RnjgAtd6AAsmsxgk6_R_V_X-nINwcXaXeXQwVXW6bXfXY3fPYPepSPT6NwWwEeovcvavd5bQxALIH0xQGupU0kxAPaY6S6e6fQ57WaYAG1OephpJpRlwAUAsz7p4VgogAIfpwQWmP3P1VOf3f0CBSBGOSbAMwCgO-3gPNOYbQOwPPPUZEOmNg1gBkMTPUZUM0Mb23B_PfpwDenZlG2-2b2awguEMqNeXGXqOpDpAqDz2A0BYfrGPrGmMSVSUyXrFWPG1dV2M70OPONuPUVePak8iABUcoADFyocnF2pgAH26ADK-vHZdagEi2JbixYwS9Y51bYz42uoAMam1FgTkmftAdz6DTZdR6792Zx60VYA4TAWnLwdx69zvtRlxtz6uVt9a6gAFhE92AD-8gacxZqYAN8-TDw8gAYC4sWWvh2R0wDR2vjcFW1YD2kwAa0l1ysQMGPkBo0N2rUAAqwTz6OraVAA1jAOwHdfjIAJ1-gAG36ABsShKxi0AyAGjS6_6xQyxq866wQHdYABt5gAJdGqmzCAA05pqYAH7evdeDSj5A1dddC9HTAb36WAcARlRt6lN6z6nl8lR6BrcptbvdqpXjjbClrzR6yrz6BAaN86cba6tbgAoYqACd2m4txYABZqaLNzAWArDzTzldLzYAMDhbk7nzEApDuou7kmmLkmJjjlRLgYEgMDWAGletKlvbWl7Vxt5tebn131v1x7MeJVz73VtGsL7e6WuVo1hVbVJ6HVXVPVj6-gd1NF473j7bVdZzb9Fzf6YHNj3VPGVAks9DYrqp_92pgAWAmADj8YANJygAskpFOqmADC5oALOJpggAhdGADp3tqRBqqYADwKpguN4VgAK_GAB7aqqTxmi71hiy9eRjpQDUpzKWur3R4544oIAN4-gAPPLx2ABQcoAEbpgAAOaABwKrS5w4AHymgAFOqABomoZ4AJmK2pbdTDgAYXKABMaYAEbWgA1RGABV-oAPXOgA5kaAAyERUoAITWpAlt1tS1K1a1dmUrdGsrKlCrSrUlqrW1B1Gr0V792rurHA-r3YkT0TbrH1qlnrnlPrjTR6ubCmQbsXYb0rHAkbcAMbOhIoDp2b57emBbNX51zb7TMAILnb3bBtfbHAA7Q7IL6tMDM7Ulc7C7t-7maGIo0z1TlzClSlX7mlEG_7CmgHP1PB4GkcugpHvgcnX2IoB7YDf66OPX7zV7b9F9D33zXVr1y3E0j7G1Thot4p6Wqowylq8QbY5DFAHXOb93UDp7bzIHHbXbPb4lz6VtUAbpQ7t7GLkp86KnQNspEAZngAuEpOOABoyoAGhygAMq7kUKiqnMuADOinzaQPer7QgG6eAEehIAzUessVgKN_bSKGjdrVG1AGlUpagEgN85fXYKsO4Ol-QGpUeke3E5QNFdndV17kwIAKJpgAHLGADIZoAMPygA2_GAArmoABoqwj0v368TkGaNSvKv7ATAhCgAIrGAD10Wb_0znfK9d715tZe1DdfS7wphZTevKzUzExfn5j7WC8-nIFgNnX7-QBN5H7INH21xNLlZ72wG-8-jXSgOBqgMOxAIAHBygAqPoGl6-mCqnkUABWRlgAsCqADq2jyIAC-BzGaVD6u1SmDN9DgAgZ6eeACU_pZ4AM56gA357MZXePM3d3WADz1jS4AFzKgA--qqkNvtuQ9ntp8UPgAwAgCi9PdQ3yCoC7-7-LcKb3t5sxVYDM_dtIsw9sDr-b-PfEMcCQ0qAgDry59o9H_uswBQC9tIuXp3WACQCZTzn6QMYsTPDVrH2_QM1PKKlGAD03krt9Bu89UfkezuqAANrMAB1cmSkACYCgv3wbYcKAp_c_qpUv6Ttr-hlW_mLwf7789-r_PAfVjRYgswehbVAWgNVJYD0IvdWtpOwIEgAL-q_PNk21aYts4B4GBmpO3RYUNxB1GCjO9yrqM1jKAgKLsZXoaAAwHSY6AAQTVtaqk-alncmoAE34xcCKGt6HsbuzGAPkH3W5jB3qJATHouiAA
+	⚠ 请注意，该图表不是 Apache ECharts 官方示例，而是由用户代码生成的。请注意鉴别其内容。
+-->
+<!DOCTYPE html>
+<html lang="zh-CN" style="height: 100%">
+<head>
+  <meta charset="utf-8">
+</head>
+<body style="height: 100%; margin: 0">
+  <div id="container" style="height: 100%"></div>
+
+  
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.3.3/dist/echarts.min.js"></script>
+  <!-- <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/world.js"></script> -->
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/china.js"></script>
+  
+
+
+
+  <!-- Uncomment this line if you want to dataTool extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.3.3/dist/extension/dataTool.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use gl extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-gl@2/dist/echarts-gl.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to echarts-stat extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-stat@latest/dist/ecStat.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use map
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/china.js"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/world.js"></script>
+  -->
+  <!-- Uncomment these two lines if you want to use bmap extension
+  <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=YOUR_API_KEY"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.3.3/dist/extension/bmap.min.js"></script>
+  -->
+
+<script type="text/javascript">
+    var dom = document.getElementById('container');
+    var myChart = echarts.init(dom, null, {
+      renderer: 'canvas',
+      useDirtyRect: false
+    });
+    var app = {};
+    
+    var echartOption;       // echarts配置项
+    var curSelProvName = '' // 当前选择中省份名称
+
+    var geoCoordMap = {
+        '甘肃': [104.35851932200904, 35.40123159456249],
+        '青海': [98.77753991113792, 36.53004669909589],
+        '广西': [107.99655439706783, 23.735673935703687],
+        '贵州': [106.25837527859625, 26.505908922458815],
+        '重庆': [106.59396202962392, 29.737597968171656],
+        '北京': [116.35679568867022, 40.25702627244448],
+        '福建': [117.7802840500002, 26.617417710000097],
+        '安徽': [116.62978356256133, 32.13288035704295],
+        '广东': [112.38982181100027, 23.09589264500019],
+        '西藏': [91.67781334810746, 29.081958115774455],
+        '新疆': [86.36633990098284, 42.722922619141826],
+        '海南': [109.68506920700003, 19.15330638200004],
+        '宁夏': [106.65764611237813, 37.85293528913229],
+        '陕西': [108.11004520082531, 33.38519318281914],
+        '山西': [111.72104861939818, 36.35586904611952],
+        '湖北': [111.37402265791923, 31.417539985382007],
+        '湖南': [110.902381220417, 28.066339830418826],
+        '四川': [103.4985530948494, 30.67739736629541],
+        '云南': [100.29696333219198, 25.721744899807277],
+        '河北': [115.64873628100008, 38.04465116700004],
+        '河南': [113.46032230023388, 34.15787079530108],
+        '辽宁': [123.35254967500032, 40.48240794500012],
+        '山东': [118.28029535679576, 36.076608741968954],
+        '天津': [117.65956331411487, 39.21855181203543],
+        '江西': [115.17473025869447, 27.407869370774904],
+        '江苏': [120.34094130672383, 32.49093327643905],
+        '上海': [121.64094130672383, 31.02093327643905],
+        '浙江': [120.28535242000021, 29.10194563100012],
+        '吉林': [126.25284846284336, 43.46916859112878],
+        '内蒙古': [108.41327478505161, 40.317334824121446],
+        '黑龙江': [131.25284846284336, 46.46916859112878],
+        '香港': [114.0517684250002, 22.32851797100014],
+        '澳门': [111.95860436300031, 21.8],
+        '台湾': [120.63599694100014, 23.222805080000114],
+    };
+
+    var DMData = [
+        [{
+            name: '上海'
+        }, {
+            name: "海南",
+            value: 30
+        }],
+        [{
+            name: '上海'
+        }, {
+            name: "四川",
+            value: 30
+        }],
+        [{
+            name: '上海'
+        }, {
+            name: "山西",
+            value: 30
+        }],
+        [{
+            name: '上海'
+        }, {
+            name: "江西",
+            value: 30
+        }],
+        [{
+            name: '上海'
+        }, {
+            name: "吉林",
+            value: 30
+        }],
+        [{
+            name: '上海'
+        }, {
+            name: "湖北",
+            value: 100
+        }],
+        
+    ];
+
+    // 小飞机的图标，可以用其他图形替换
+    var planePath =
+        'path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z';
+
+    // 获取地图中起点和终点的坐标，以数组形式保存下来
+    var convertData = function(data) {
+        var res = [];
+        for (var i = 0; i < data.length; i++) {
+            var dataItem = data[i];
+            var fromCoord = geoCoordMap[dataItem[0].name];
+            var toCoord = geoCoordMap[dataItem[1].name];
+            if (fromCoord && toCoord) {
+                res.push([{
+                    coord: fromCoord // 起点坐标
+                }, {
+                    coord: toCoord // 终点坐标
+                }])
+            }
+        }
+        return res;
+    }
+
+    var color = ['#9ae5fc', '#FFA501']; // 自定义图中要用到的颜色
+    var series = []; // 用来存储地图数据
+    var factor = 4;
+
+    // 全国输出数据
+    // 显示终点位置,类似于上面最后一个效果，放在外面写，是为了防止被循环执行多次
+    series.push({
+        name: "serie_prov",
+        type: "map",
+        geoIndex: 0,
+        data:[
+            {
+                name: "北京",
+                value: 540
+            },
+            {
+                name: "天津",
+                value: 130
+            },
+            {
+                name: "上海",
+                value: 400
+            },
+            {
+                name: "重庆",
+                value: 750
+            },
+            {
+                name: "河北",
+                value: 130
+            },
+            {
+                name: "河南",
+                value: 830
+            },
+            {
+                name: "云南",
+                value: 110
+            },
+            {
+                name: "辽宁",
+                value: 19
+            },
+            {
+                name: "黑龙江",
+                value: 150
+            },
+            {
+                name: "湖南",
+                value: 690
+            },
+            {
+                name: "安徽",
+                value: 60
+            },
+            {
+                name: "山东",
+                value: 39
+            },
+            {
+                name: "新疆",
+                value: 4
+            },
+            {
+                name: "江苏",
+                value: 31
+            },
+            {
+                name: "浙江",
+                value: 104
+            },
+            {
+                name: "江西",
+                value: 36
+            },
+            {
+                name: "湖北",
+                value: 52
+            },
+            {
+                name: "广西",
+                value: 33
+            },
+            {
+                name: "甘肃",
+                value: 7
+            },
+            {
+                name: "山西",
+                value: 5
+            },
+            {
+                name: "内蒙古",
+                value: 778
+            },
+            {
+                name: "陕西",
+                value: 22
+            },
+            {
+                name: "吉林",
+                value: 4
+            },
+            {
+                name: "福建",
+                value: 18
+            },
+            {
+                name: "贵州",
+                value: 5
+            },
+            {
+                name: "广东",
+                value: 98
+            },
+            {
+                name: "青海",
+                value: 1
+            },
+            {
+                name: "西藏",
+                value: 0
+            },
+            {
+                name: "四川",
+                value: 44
+            },
+            {
+                name: "宁夏",
+                value: 4
+            },
+            {
+                name: "海南",
+                value: 22
+            },
+            {
+                name: "台湾",
+                value: 3
+            },
+            {
+                name: "香港",
+                value: 5
+            },
+            {
+                name: "澳门",
+                value: 555
+            }
+        ]
+    });
+
+    var refreshDynLine = function(fromProv, groups) {
+        var _series = []
+        groups.forEach(function(item, i) {
+            _series.push({
+                // 白色航线特效图
+                type: 'lines',
+                zlevel: 1, // 用于分层，z-index的效果
+                effect: {
+                    show: true, // 动效是否显示
+                    period: 6, // 特效动画时间
+                    trailLength: 0.7, // 特效尾迹的长度
+                    color: '#F4A460', // 特效颜色
+                    symbolSize: 3 // 特效大小
+                },
+                lineStyle: {
+                    normal: { // 正常情况下的线条样式
+                        color: color[0],
+                        width: 0, // 因为是叠加效果，要是有宽度，线条会变粗，白色航线特效不明显
+                        curveness: -0.2 // 线条曲度
+                    }
+                },
+                data: convertData(item[1]) // 特效的起始、终点位置
+            }, { // 小飞机航线效果
+                type: 'lines',
+                zlevel: 2,
+                //symbol: ['none', 'arrow'],   // 用于设置箭头
+                symbolSize: 10,
+                effect: {
+                    show: true,
+                    period: 6,
+                    trailLength: 0,
+                    // symbol: planePath, // 特效形状，可以用其他svg pathdata路径代替
+                    symbolSize: 5
+                },
+                lineStyle: {
+                    normal: {
+                        color: '#F4A460',
+                        width: 1,
+                        opacity: 0.6,
+                        curveness: -0.2
+                    }
+                },
+                data: convertData(item[1]) // 特效的起始、终点位置，一个二维数组，相当于coords: convertData(item[1])
+            }, { // 散点效果
+                type: 'effectScatter',
+                coordinateSystem: 'geo', // 表示使用的坐标系为地理坐标系
+                geoIndex: 0,
+                zlevel: 3,
+                rippleEffect: {
+                    brushType: 'stroke' // 波纹绘制效果
+                },
+                label: {
+                    normal: { // 默认的文本标签显示样式
+                        show: false,
+                        position: 'left', // 标签显示的位置
+                        formatter: '{b}' // 标签内容格式器
+                    }
+                },
+                itemStyle: {
+                    color: '#F4A460'
+                },
+                data: item[1].map(function(dataItem) {
+                    return {
+                        name: dataItem[1].name,
+                        value: geoCoordMap[dataItem[1].name], // 起点的位置
+                        symbolSize: dataItem[1].value / factor, // 散点的大小，通过之前设置的权重来计算，val的值来自data返回的value
+                    };
+                })
+            });
+        });
+
+        // 动态效果 - 源点
+        _series.push({
+            type: 'effectScatter',
+            coordinateSystem: 'geo',
+            zlevel: 3,
+            rippleEffect: {
+                brushType: 'stroke'
+            },
+            label: {
+                normal: {
+                    show: false, // 显示开关
+                    position: 'left',
+                    formatter: '{b}'
+                }
+            },
+            symbolSize: function(val) {
+                return val[2] / factor;
+            },
+            itemStyle: {
+                normal: {
+                    color: '#FFA501'
+                }
+            },
+            data: [{
+                name: fromProv,
+                value: geoCoordMap[fromProv].concat([100]),
+                label: {
+                    normal: {
+                        position: 'right'
+                    }
+                }
+            }]
+        });
+
+        return _series;
+    };
+
+    seriesDynLines = refreshDynLine('上海', [
+        ['上海', DMData]
+    ]);
+    series = series.concat(seriesDynLines);
+    
+    // 最后初始化世界地图中的相关数据
+    echartOption = {
+        backgroundColor: '#F5F5F5',
+        title: {
+            show: true,
+            text: '中国国际贸易促进委员会',
+            subtext: '国别资讯',
+            textStyle: {
+                color: '#000000',
+                fontSize: 20
+            },
+            top: '10px',
+            left: '10px'
+        },
+        textStyle: {
+            color : '#FFFFFF',
+            fontSize: 12
+        },
+        /*
+        visualMap: {           // 地图图例，视觉映射
+            type: 'piecewise',
+            show:true,
+            left: 'left',
+            top: 'bottom',
+            showLabel:true,
+            seriesIndex: 0,  // 指定取哪个系列的数据，即哪个系列的 series.data。默认取所有系列
+            min: 0,
+            max: 830,
+            splitNumber: 10,
+            inRange: {
+                symbol: 'roundRect',
+                color: ['#B0C4DE', '#00BFFF'],
+                symbolSize: [5, 30]
+            }
+        },
+        */
+        visualMap: {           // 地图图例，视觉映射
+            show:true,
+            left: 'left',
+            top: 'bottom',
+            showLabel:true,
+            seriesIndex: 0,  // 指定取哪个系列的数据，即哪个系列的 series.data。默认取所有系列
+            pieces: [        // 根据数据大小，各省显示不同颜色
+            {
+                gte: 1000,
+                label: ">= 1000",
+                color: "#00BFFF"
+            },
+            {
+                gte: 500,
+                lt: 999,
+                label: "500 - 999",
+                color: "#87CEFA"
+            },
+            {
+                gte: 100,
+                lt:499,
+                label: "100 - 499",
+                color: "#ADD8E6"
+            },
+            {
+                gte: 10,
+                lt: 99,
+                label: "10 - 99",
+                color: "#B0E0E6"
+            },
+            {
+                lt:10,
+                label:'<10',
+                color: "#B0C4DE"
+            }
+            ]
+        },
+        geo: {
+            map: 'china', // 与引用进来的地图js名字一致
+            roam: false, // 禁止缩放平移
+            selectedMode: 'single',
+            label: {
+                normal: {
+                    show:true,
+                    color: '#000000'
+                },
+                emphasis: {
+                    color: '#FFFFFF'
+                }
+            },
+            itemStyle: { // 每个区域的样式
+                normal: {
+                    areaColor: '#F0F0F0'
+                },
+                emphasis: {
+                    areaColor: '#2E8B57'
+                }
+            },
+            select: {
+                lable: {
+                    color: '#FFFFFF'
+                },
+                itemStyle: {
+                    areaColor: '#2E8B57'
+                }
+            }
+        },
+        series: series, // 将之前处理的数据放到这里
+        textStyle: {
+            fontSize: 12
+        }
+    };
+    myChart.setOption(echartOption);
+
+    myChart.on('click', {seriesName : 'serie_prov'}, function(params) {
+        if (curSelProvName === params.name) {
+            curSelProvName = ''
+        } else {
+            curSelProvName = params.name
+        }
+        console.log('click province ' + params.seriesName + '.' + curSelProvName)
+
+        if ( curSelProvName === '') {
+            echartOption.series = echartOption.series.slice(0,1)
+            myChart.setOption(echartOption, {notMerge: true});
+        } else {
+            echartOption.series = echartOption.series.slice(0,1)
+            var cloneDMData = DMData.slice()
+            cloneDMData.forEach(function(item, i) {
+                item[0].name = curSelProvName
+            });
+            seriesDynLines = refreshDynLine(curSelProvName, [
+                [curSelProvName, cloneDMData]
+            ]);
+            echartOption.series = echartOption.series.concat(seriesDynLines);
+            myChart.setOption(echartOption, {notMerge: true});
+        }
+        
+    });
+
+    window.addEventListener('resize', myChart.resize);
+</script>
+</body>
+</html>
